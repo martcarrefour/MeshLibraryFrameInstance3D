@@ -68,3 +68,7 @@ func _set_current_frame(frame: int) -> void:
 ## @return The index of the currently displayed mesh frame.
 func _get_current_frame() -> int:
 	return current_frame
+
+func _validate_property(property: Dictionary):
+	if property["name"] == "mesh":
+		property["usage"] = PROPERTY_USAGE_NONE
