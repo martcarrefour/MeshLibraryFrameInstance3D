@@ -43,7 +43,7 @@ func _set_mesh_library(frames: MeshLibrary) -> void:
 		mesh_size = 0
 		self.mesh = null
 	else:
-		mesh_size = frames.get_item_list().size()
+		mesh_size = frames.get_item_count()
 		self.mesh = frames.get_item_mesh(0)
 
 ## Returns the current MeshLibrary resource.
